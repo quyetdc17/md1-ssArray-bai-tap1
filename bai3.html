@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mangr</title>
+</head>
+<body>
+<script>
+  const text=window.prompt();
+  let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+  let result = [];
+
+  for(let x=0; x<text.length; x++)
+  {
+    if(UPPER.indexOf(text[x]) !== -1)
+    {
+      result.push(text[x].toLowerCase());
+    }
+    else if(LOWER.indexOf(text[x]) !== -1)
+    {
+      result.push(text[x].toUpperCase());
+    }
+    else
+    {
+      result.push(text[x]);
+    }
+  }
+  document.writeln(result.join(' '));
+  console.log(result.join(' '))
+</script>
+</body>
+</html>
